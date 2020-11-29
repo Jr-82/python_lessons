@@ -1,6 +1,6 @@
 my_list = [7, 5, 3, 3, 2]
-print(f"Рейтинг - {my_list}")
-digit = int(input("Введите число или 741 - для выхода: "))
+print(f'Рейтинг - {my_list}')
+digit = int(input('Введите число или 741 - для выхода: '))
 while digit != 741:
     for el in range(len(my_list)):
         if my_list[el] == digit:
@@ -12,5 +12,5 @@ while digit != 741:
             my_list.append(digit)
         elif my_list[el] > digit and my_list[el + 1] < digit:
             my_list.insert(el + 1, digit)
-    print(f"текущий список - {my_list}")
-    digit = int(input("Введите число или 741 для выхода: "))
+    print(f'текущий список - {my_list}')
+    digit = int(input('Введите число или 741 для выхода: '))
